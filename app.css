@@ -25,6 +25,7 @@ body {
 }
 
 header {
+  display: flex;
   flex: 0 50px;
 }
 
@@ -39,15 +40,31 @@ header {
 
   color: white;
   font-family: 'Open Sans';
-  font-size: 1.1rem;
-  line-height: 46px;
+  line-height: 50px;
 }
 
   header h1 {
+    padding: 0 30px 0 10px;
+
+    font-size: 2.2rem;
+    font-weight: 300;
+    line-height: 46px;
+  }
+
+  header nav a {
+    display: block;
+    height: 100%;
     padding: 0 10px;
 
+    color: currentColor;
+    font-size: 1.4rem;
     font-weight: 300;
+    text-decoration: none;
   }
+
+    header nav a:hover {
+      background-color: #2e85c7;
+    }
 
 textarea {
   padding: 10px;
@@ -58,4 +75,15 @@ textarea {
 
   font-family: 'Lucida Console';
   font-size: 1.4rem;
+}
+
+/* Icons */
+
+.icon-new {
+  padding-left: 40px;
+
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAA0CAQAAABvcdNgAAAACXBIWXMAAAsTAAALEwEAmpwYAAABeElEQVRYw+2YXbmEIBCGiUAEIxjBCEYgAhFsYAQjGMEIRjACEb5zcR5gxLPrsLLf1Zm9XOB1fhnGGIXAYsSMDQFSAjbMGGHNc4GFw4o7WeEe4GAxFTq8k4DpIxh8BSTDfB2kw3455MACj0H8PBYcl3U7Oi1mLHQ5ML3ejA5TgQsYNRhXQJzR7TrD7nZhObu3yuDn0Fm02uzoqwOoP/nWvfaNzAz7YUrIrBv/dmpQqX0PW4Txr0EklF4f15Os1X5Nz+wb26Bw5c/25z9CUrY3LWpkL060MjCj3AZ0XKgI9vJMoc+h+FYlyJiUwlEnkT2uKag8N8XIobK+GiR0Wn8Np/ZPNSj7ycp60DUHdaJGYK4xXB1IGG822OrKTiUolqPNpND2XwHFihPSRgxfAQ1p/TtQbW/yD+KD2gYDLbxpCUsrQbSiyromaBcf8ypnNSe0dovYQNJaYmKTT3y20B5ixKcl8bFMfP4TBxrEEQ1x6EQdoxEHg21HnT8QvvzrnxspbgAAAABJRU5ErkJggg==');
+  background-position: 10px center;
+  background-repeat: no-repeat;
+  background-size: 26px;
 }
