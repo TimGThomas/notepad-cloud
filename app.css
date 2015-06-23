@@ -1,0 +1,61 @@
+/* Resets */
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  line-height: 1;
+}
+
+* {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+/* Layout */
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  flex: 0 50px;
+}
+
+textarea {
+  flex: 1;
+}
+
+/* Components */
+
+header {
+  background-color: #38a5f8;
+
+  color: white;
+  font-family: 'Open Sans';
+  font-size: 1.1rem;
+  line-height: 46px;
+}
+
+  header h1 {
+    padding: 0 10px;
+
+    font-weight: 300;
+  }
+
+textarea {
+  padding: 10px;
+
+  border: none;
+  outline: none;
+  resize: none;
+
+  font-family: 'Lucida Console';
+  font-size: 1.4rem;
+}
