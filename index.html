@@ -4,7 +4,7 @@
 
 <head>
   <title>Notepad Cloud</title>
-  <link href="//fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+  <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
   <link href="app.css" rel="stylesheet">
 </head>
 
@@ -13,13 +13,25 @@
   <header>
     <h1>Notepad Cloud</h1>
     <nav>
-      <a href target="_blank" class="icon-new">
-        New
+      <a href target="_blank" class="icon-new">New</a>
+      <a class="icon-dropdown">
+        Options
+        <ul>
+          <li data-option="status-bar">Status Bar</li>
+          <li data-option="word-wrap">Word Wrap</li>
+        </ul>
       </a>
     </nav>
   </header>
 
   <textarea placeholder="Start typing here"></textarea>
+
+  <footer>
+    Ln 1, Col 1
+  </footer>
+
+  <script src="jquery-1.11.3.min.js"></script>
+  <script src="app.js"></script>
 
 </body>
 
